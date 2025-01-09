@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hotel SagarMatha</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">Hotel SagarMatha</div>
+      <ul class="nav__links">
+        <li class="link"><a href="#">Home</a></li>
+        <li class="link"><a href="#">Blog</a></li>
+        <li class="link"><a href="#">Contact Us</a></li>
+        <div class ="nav__btn">
+  
+          <a href="book (2).html">
+            <button class="btn"><p>Book</p></button>
+        </a>
+        </div>
+      </ul>
+    </nav>
+    <header class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Hotel SagarMatha</h1>
+          <p>Affordable Comfort, Unbeatable Value.</p>
+        </div>
+        <!-- 
+        <div class="banner-form-area">
+          <div class="container">
+              <div class="banner-form">
+                  
+                  <div class="row align-items-center">
+                      <div class="col-lg-3 col-md-3">
+                          <div class="form-group">
+                              <label>
+                                  CHECK IN
+                              </label>
+                              <div class="input-group">
+                                  
+                                  
+                                  <input name="datetimepicker" id="datetimepicker" type="date" class="form-control hasDatepicker" placeholder="11/02/2024">
+
+                                  <span class="input-group-addon"></span>
+                              </div>
+                              <i class="bx bxs-chevron-down"></i>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3">
+                          <div class="form-group">
+                              <label>
+                                  CHECK OUT
+                              </label>
+                              <div class="input-group">
+                                  <input name="datetimepickercheck" id="datetimepickercheck" class="form-control hasDatepicker" type="date" placeholder="11/02/2024">
+                                  
+                                  
+                                  <span class="input-group-addon"></span>
+                              </div>
+                              <i class="bx bxs-chevron-down"></i>
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2">
+
+                          <div class="form-group">
+                              <label>
+                                  GUESTS
+                              </label>
+                              <select name="drpTotalGuests" id="drpTotalGuests" class="form-control" style="display: none;">
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="10+">10+</option>
+
+</select><div class="nice-select form-control" tabindex="0"><span class="current">01</span><ul class="list"><li data-value="01" class="option selected">01</li><li data-value="02" class="option">02</li><li data-value="03" class="option">03</li><li data-value="04" class="option">04</li><li data-value="06" class="option">06</li><li data-value="07" class="option">07</li><li data-value="08" class="option">08</li><li data-value="09" class="option">09</li><li data-value="10" class="option">10</li><li data-value="10+" class="option">10+</li></ul></div>
+
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2">
+                          <div class="form-group">
+                              <label>
+                                  MOBILE
+                              </label>
+                              <div class="input-group">
+                                  <input name="txtMobile" type="text" id="txtMobile" class="form-control" placeholder="10 Digits">
+                                  
+                                  <span class="input-group-addon"></span>
+                              </div>
+                              <i class="bx bxs-chevron-down"></i>
+                          </div>
+                      </div>
+                      <div class="col-lg-2 col-md-2">
+                          
+                          <input type="submit" name="btnSendEnquiry" value="Send Enquiry" id="btnSendEnquiry" class="default-btn btn-bg-one border-radius-5">
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>-->
+        <div class="booking__container">
+          <form>
+            <div class="form__group">
+              <div class="input__group">
+                <!--<input type="date" />-->
+                
+                <div class="input-group">                                  
+                  <input name="datetimepicker" id="datetimepicker" type="date" class="form-control hasDatepicker" placeholder="Check in">
+                  <span class="input-group-addon"></span>
+              </div>
+              </div>
+              <p>Check in</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="date" />
+                <label></label>
+              </div>
+              <p>Check Out</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="number" />
+              </div>
+              <p>Add number of Guests</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" />
+              </div>
+              <p>Add phone number</p>
+            </div>
+          </form>
+          <button class="btn"><!--<i class="ri-search-line">--> <p>Send Enquiry</p></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="whatsapp__container">
+      <!-- WhatsApp button -->
+      <a href="javascript:void(0);" class="whatsapp-btn" onclick="openWhatsAppChat()">
+          Chat on WhatsApp
+      </a>
+    
+      <script>
+          function openWhatsAppChat() {
+              const phoneNumber = "7584974338";  // Replace with your phone number
+              const message = "Hello, I need assistance.";  // Optional message you want to prefill
+              const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      
+              // Open WhatsApp in a new tab (or app, depending on the device)
+              window.open(whatsappLink, "_blank");
+          }
+      </script>
+  </section>
+  
+    <section class="section__container popular__container">
+      <h2 class="section__header">Popular Tourist Spots</h2>
+      <div class="popular__grid">
+        <div class="popular__card">
+          <img src="assets/TigerHill.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Tiger Hill</h4>
+            </div>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/Glenarys.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Glenarys</h4>
+            </div>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/Chowrasta.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Chowrasta</h4>
+            </div>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/Ghum.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Ghoom Railway Station</h4>
+            </div>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/Batasia.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Batasia Loop</h4>
+            </div>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="assets/Mirik.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Mirik</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="section__container services__container">
+        <h2 class="section__header">Services</h2>
+        <div class="services__grid">
+          <div class="services__card">
+            <img src="assets/sightseeing.jpeg" alt="client" />
+            <p>
+              Explore the best tourist spots with our guided sightseeing tours,
+              designed to help you experience the beauty and culture of your destination hassle-free.
+            </p>
+          </div>
+          <div class="services__card">
+            <img src="assets/dropoff.jpeg" alt="client" />
+            <p>
+              Experience convenience with our reliable pick-up and drop-off services, making your travel to and from 
+              the hotel smooth and comfortable.
+            </p>
+          </div>
+          <div class="services__card">
+            <img src="assets/freepark.jpg" alt="client" />
+            <p>
+              Enjoy stress-free travel with our secure and complimentary parking facilities, ensuring your vehicle is safe while you
+              relax and explore.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--<section class="section__container">
+      <div class="reward__container">
+        <p>100+ discount codes</p>
+        <h4>Join rewards and discover amazing discounts on your booking</h4>
+        <button class="reward__btn">Join Rewards</button>
+      </div>
+    </section>-->
+   <!-- <section class="whatsapp__container">
+    
+      
+        <a href="javascript:void(0);" class="whatsapp-btn" onclick="openWhatsAppChat()">
+            Chat on WhatsApp
+        </a>
+    
+        <script>
+            function openWhatsAppChat() {
+                const phoneNumber = "7584974338";  // Replace with your phone number
+                const message = "Hello, I need assistance.";  // Optional message you want to prefill
+                const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    
+                // Open WhatsApp in a new tab (or app, depending on the device)
+                window.open(whatsappLink, "_blank");
+            }
+        </script> -->
+    
+    
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Hotel SagarMatha</h3>
+          <p>
+            Hotel SagarMatha is a charming hotel located in the scenic hill station of Darjeeling, nestled in the lap of the 
+            majestic Himalayas. It offers a serene atmosphere with breathtaking views of the surrounding mountain ranges. 
+            The hotel provides comfortable accommodations, making it an ideal place for travelers seeking a peaceful retreat amidst 
+            nature's beauty. Its prime location allows guests to experience the picturesque landscapes, fresh mountain air, and the
+            rich cultural heritage of Darjeeling.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <p>About Us</p>
+          <p>Our Team</p>
+          <p>Blog</p>
+          <p>Book</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <p>Social Media</p>
+          <p>Help Center</p>
+          <p>Partnerships</p>
+        </div>
+      </div>
+     <!--<div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+      </div>-->
+    </footer>
+  </body>
+</html>

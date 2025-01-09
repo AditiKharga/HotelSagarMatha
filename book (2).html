@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles (2).css" />
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">Hotel SagarMatha</div>
+        <ul class="nav__links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <!--<li class="link"><a href="#">Book</a></li>-->
+          <li class="link"><a href="#">Blog</a></li>
+          <li class="link"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      
+      <div class="book-pic-container">
+        <img src="assets/Chowrasta.jpg" class="img-fluid" alt="chowrasta" style="height:70%";>
+        <div class="text-overlay">
+            <h1>Welcome to Hotel SagarMatha</h1>
+            <p>Ready to book your stay in Darjeeling with us?</p>
+        </div>
+        
+
+
+
+
+        <!-- form -->
+        <div class="form-container" id ="apple">
+          <div class="form-content">
+              <h1 id="h1-form">Book Your Holiday</h1>
+              <p id="para-form">Submit Your Booking Request</p>
+              <form action="sendMail.php" method="POST" id="bookingForm">
+                  <input type="text" name="mobile" placeholder="10 Digit Mobile No" required>
+                  
+                  <!-- <div class="form-row">
+                      
+                      <input type="date" name="checkin" placeholder="Check In" required>
+                      <input type="date" name="checkout" placeholder="Check Out" required>
+                  </div> -->
+                  <div class="form-row">
+                    <input type="text" id="checkin" name="checkin" placeholder="Check In" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                    <input type="text" id="checkout" name="checkout" placeholder="Check Out" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                </div>
+                  <div class="form-row">
+                      <select name="adults" required>
+                          <option value="" disabled selected>Adult(s)(07+)</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                      </select>
+                      <select name="children" required>
+                          <option value="" disabled selected>Children(0-7)</option>
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                      </select>
+                  </div>
+                  
+                  <input type="text" id="messages" name="emailID" placeholder="E-Mail" required>
+                  
+                  <button type="submit" id="button-form">Submit Enquiry</button>
+              </form>
+          </div>
+      </div>
+      </div>
+      <footer class="footer">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <h3>Hotel SagarMatha</h3>
+            <p>
+              Hotel SagarMatha is a charming hotel located in the scenic hill station of Darjeeling, nestled in the lap of the 
+              majestic Himalayas. It offers a serene atmosphere with breathtaking views of the surrounding mountain ranges. 
+              The hotel provides comfortable accommodations, making it an ideal place for travelers seeking a peaceful retreat amidst 
+              nature's beauty. Its prime location allows guests to experience the picturesque landscapes, fresh mountain air, and the
+              rich cultural heritage of Darjeeling.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h4>Company</h4>
+            <p>About Us</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+            <p>Book</p>
+            <p>Contact Us</p>
+          </div>
+          <div class="footer__col">
+            <h4>Legal</h4>
+            <p>FAQs</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="footer__col">
+            <h4>Resources</h4>
+            <p>Social Media</p>
+            <p>Help Center</p>
+            <p>Partnerships</p>
+          </div>
+        </div>
+        <div class="footer__bar">
+          Copyright © 2023 Web Design Mastery. All rights reserved.
+        </div>
+      </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script src="sendEmail.js"></script>
+
+
+</body>
+</html>
